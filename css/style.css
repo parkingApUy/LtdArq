@@ -216,7 +216,6 @@ blockquote:before {content:'“'; position:absolute; left:15px; top:13px; font-s
 	margin-bottom:15px;
 	line-height:50px;
 	font-size:50px;
-	font-family:Cambria;
 	color:#fff;
 }
 .breadcrumbs_block p {

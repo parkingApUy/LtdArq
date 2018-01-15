@@ -30,6 +30,7 @@ if($_POST) {
 	
 	echo ($headers);
 	echo ($clientEmail);
+	echo ($message);
     echo json_encode($array);
 
 }

@@ -2,8 +2,7 @@
 
 require("sendgrid-php/sendgrid-php.php");
 
-$clientEmail = addslashes(trim($_POST['email']));
-$message = addslashes(trim($_POST['message']));
+
 
 $from = new SendGrid\Email(null, "clientEmail");
 $to = new SendGrid\Email(null, "info@parkingap.com.uy");

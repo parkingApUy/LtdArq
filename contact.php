@@ -2,7 +2,7 @@
 
 
 
-if($_POST) {
+
 
     // Enter the email where you want to receive the message
     $emailTo = 'info@parkingap.com.uy';
@@ -12,12 +12,12 @@ if($_POST) {
 
     	$headers = "From: " . $clientEmail . " <" . $clientEmail . ">" . "\r\n" . "Reply-To: " . $clientEmail;
 		mail($emailTo, $message, $headers);
-	}
+	
     
 	
 	
-    echo json_encode($array);
+    
 
-}
+
 
 ?>

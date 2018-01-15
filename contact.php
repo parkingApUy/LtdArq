@@ -4,7 +4,7 @@ require("sendgrid-php/sendgrid-php.php");
 
 
 
-$from = new SendGrid\Email(null, "clientEmail");
+$from = new SendGrid\Email(null, "clientEmail@gmail.com");
 $to = new SendGrid\Email(null, "info@parkingap.com.uy");
 $content = new SendGrid\Content("text/plain", "message");
 $mail = new SendGrid\Mail($from, $to, $content);
@@ -16,4 +16,5 @@ $response = $sg->client->mail()->send()->post($mail);
 echo $response->statusCode();
 echo $response->headers();
 echo $response->body();
+
 

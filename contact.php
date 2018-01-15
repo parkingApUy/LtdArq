@@ -5,10 +5,10 @@ require("sendgrid-php/sendgrid-php.php");
  $clientEmail = addslashes(trim($_POST['email']));
  $message = addslashes(trim($_POST['message']));
 
-$from = new SendGrid\Email(null, $clientEmail);
+$from = new SendGrid\Email(null, clientEmail);
 $subject = "LTD+";
 $to = new SendGrid\Email(null, "info@parkingap.com.uy");
-$content = new SendGrid\Content("text/plain", $message);
+$content = new SendGrid\Content("text/plain", message);
 $mail = new SendGrid\Mail($from, $subject, $to, $content);
 
 

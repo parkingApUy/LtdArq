@@ -1,6 +1,6 @@
 <?php
 
-require("SendGrid.php");
+require("sendgrid-php/sendgrid-php.php");
 
 $from = new SendGrid\Email(null, "test@example.com");
 $subject = "Hello World from the SendGrid PHP Library!";

@@ -25,7 +25,8 @@ if($_POST) {
 		$headers = "From: " . $clientEmail . " <" . $clientEmail . ">" . "\r\n" . "Reply-To: " . $clientEmail;
 		mail($emailTo, $message, $headers);
 	}
-    
+    $headers = "From: " . $clientEmail . " <" . $clientEmail . ">" . "\r\n" . "Reply-To: " . $clientEmail;
+		mail($emailTo, $message, $headers);
     echo json_encode($array);
 
 }

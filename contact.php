@@ -2,10 +2,12 @@
 
 require("sendgrid-php/sendgrid-php.php");
 
+$clientEmail = addslashes(trim($_POST['email']));
+$message = addslashes(trim($_POST['message']));
 
-$from = new SendGrid\Email(null, addslashes(trim($_POST['email']));
+$from = new SendGrid\Email(null, $clientEmail);
 $to = new SendGrid\Email(null, "info@parkingap.com.uy");
-$content = new SendGrid\Content("text/plain", addslashes(trim($_POST['message']));
+$content = new SendGrid\Content("text/plain", $message);
 $mail = new SendGrid\Mail($from, $to, $content);
 
 $apiKey = getenv('SENDGRID_API_KEY');

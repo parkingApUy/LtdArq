@@ -21,8 +21,10 @@ if($_POST) {
         $array['messageMessage'] = 'Empty message!';
     }
         // Send email
+	if(isEmail($clientEmail)  && $message != '') {
 		$headers = "From: " . $clientEmail . " <" . $clientEmail . ">" . "\r\n" . "Reply-To: " . $clientEmail;
 		mail($emailTo, $message, $headers);
+	}
     
     echo json_encode($array);
 

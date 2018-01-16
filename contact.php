@@ -21,7 +21,7 @@ $sg = new \SendGrid($apiKey);
 
 $response = $sg->client->mail()->send()->post($mail);
 
-header ("Location:home.html");		
+	
 		
     }
 

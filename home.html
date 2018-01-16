@@ -401,8 +401,8 @@
 						<div id="note"></div>
 						<div id="fields">
 							<form role="form"  action="contact.php" method="post">
-								<input  id="email" type="text" name="email" required="required"  value="Email" />
-								<textarea  id="message" name="message" required="required" >Mensaje</textarea>
+								<input  id="emailId" type="text" name="email" required="required"  value="Email" />
+								<textarea  id="messageId" name="message" required="required" >Mensaje</textarea>
 								
 								
 								<h4 hidden id="msjOculto">Mensaje enviado con éxito</h4>
@@ -412,8 +412,8 @@
 											<script>
 											function myFunction() {
 											
-											var email=document.getElementById("email").value;
-											var message=document.getElementById("message").value;
+											var email=document.getElementById("emailId").value;
+											var message=document.getElementById("messageId").value;
 											
 											if(email!="" && email !="Email"){
 												if(message!="" && message!="Mensaje"){

@@ -302,5 +302,41 @@ jQuery(document).ready(function() {
 	});
 });
 
+/*
+    Contact form
+	*/
+	$('.contact-form-face form input[type="text"], .contact-form-face form textarea').on('focus', function() {
+		$('.contact-form-face form input[type="text"], .contact-form-face form textarea').removeClass('contact-error');
+	});
+	$('.contact-form-face form').submit(function(e) {
+		e.preventDefault();
+	    $('.contact-form-face form input[type="text"], .contact-form-face form textarea').removeClass('contact-error');
+	    var postdata = $('.contact-form-face form').serialize();
+	    $.ajax({
+	        type: 'POST',
+	        url: 'contact.php',
+	        data: postdata,
+	        dataType: 'json',
+	        success: function(json) {
+	            if(json.emailMessage != '') {
+	                $('.contact-form-face form .contact-email').addClass('contact-error animated shake').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+            			$(this).removeClass('animated shake');
+            		});
+	            }
+	            
+	            if(json.messageMessage != '') {
+	                $('.contact-form-face form textarea').addClass('contact-error animated shake').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+            			$(this).removeClass('animated shake');
+            		});
+	            }
+	            if(json.emailMessage == '' && json.messageMessage == '') {
+	                $('.contact-form-face form').fadeOut('fast', function() {
+	                    $('.contact-form-face').append('<p>Gracias por contactarnos!</p>');
+	                });
+	            }
+	        }
+	    });
+	});
+
 
 

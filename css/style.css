@@ -1200,7 +1200,7 @@ input[type="text"] {
 	font-style:normal;
 	border-radius: 0;	
 	background: none;
-	border: 2px solid #242424;
+	border: 2px solid #FFFFFF;
 	box-shadow: none;
 	transition: border-color 0.3s ease-in-out; 
 	-webkit-transition: border-color 0.3s ease-in-out;
@@ -1242,7 +1242,7 @@ input[type="color"]:focus {
 	cursor:pointer;
 	margin: 0 7px 10px 0;
 	padding:13px 30px;
-	border: 2px solid #242424;
+	border: 2px solid #FFFFFF;
 	border-radius: 0;
 	box-shadow: 0;
 	text-shadow:none;

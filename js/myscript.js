@@ -324,5 +324,7 @@ jQuery(document).ready(function() {
 	            }
 	        }
 	    });
+		});
+		});
 	
 

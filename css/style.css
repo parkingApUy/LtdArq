@@ -1196,7 +1196,7 @@ input[type="text"] {
 	font-weight:400;
 	line-height:20px;
 	font-size: 12px;
-	color: #333;
+	color: #FFFFFF;
 	font-style:normal;
 	border-radius: 0;	
 	background: none;
@@ -1252,7 +1252,7 @@ input[type="color"]:focus {
 	font-weight:900;
 	line-height:20px;
 	font-size:13px;
-	color:#333;
+	color:#FFFFFF;
 	background: none; 
 	transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;

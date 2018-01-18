@@ -17,7 +17,7 @@ $mail = new SendGrid\Mail($from, $subject, $to, $content);
 $apiKey = getenv('SENDGRID_API_KEY');
 $sg = new \SendGrid($apiKey);
 
-$array = "Mensaje enviado con éxito";
+$array = Mensaje enviado con éxito;
 $response = $sg->client->mail()->send()->post($mail);
 echo json_encode($array);
 

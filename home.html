@@ -400,33 +400,22 @@
 					<div class="span9 contact_form">
 						<div id="note"></div>
 						<div id="fields">
-							<form role="form"  action="contact.php" method="post">
-								<input  id="emailId" type="text" name="email" required="required"  value="Email" />
-								<textarea  id="messageId" name="message" required="required" >Mensaje</textarea>
+							<form role="form" id="contactForm">
+								<input  id="email" type="text" name="email" required  value="Email" />
+								<textarea  id="message" name="message" required >Mensaje</textarea>
 								
 								
 								<h4 hidden id="msjOculto">Mensaje enviado con éxito</h4>
+                                
+                               
 					
-								<input class="contact_btn" type="submit" value="Enviar mensaje"  onclick="myFunction()" />
+								<input class="contact_btn" id="contact_btn" 
+                                type="submit" value="Enviar mensaje" id="submit_btn" />
 								
-											<script>
-											function myFunction() {
-											
-											var email=document.getElementById("emailId").value;
-											var message=document.getElementById("messageId").value;
-											
-											if(email!="" && email !="Email"){
-												if(message!="" && message!="Mensaje"){
-												
-											
-											
-											document.getElementById("contact-form-face").reset();
-											document.getElementById("msjOculto").hidden=false;
-											}
-											}
-											}
-											</script>
-</div>
+								
+								</form>
+							
+							</div>
 					</div><!-- //CONTACT FORM -->
 				</div>
 			</div><!-- //ROW -->

@@ -329,8 +329,8 @@ $(function() {
 			
 
 			// Set the message text.
-			$(formMessages).text("Mensaje enviado con exito");
-
+			//$(formMessages).text("Mensaje enviado con exito");
+			$(formMessages).hide(false);
 			// Clear the form.
 			var email = $("#email").val();
     			var message = $("#message").val();

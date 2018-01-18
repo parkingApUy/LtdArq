@@ -308,7 +308,7 @@ $(function() {
 	var form = $('#fc');
 
 	// Get the messages div.
-	var formMessages = $('#fields');
+	var formMessages = $('#msjOculto');
 
 	// Set up an event listener for the contact form.
 	$(form).submit(function(e) {

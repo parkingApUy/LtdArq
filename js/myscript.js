@@ -302,29 +302,33 @@ jQuery(document).ready(function() {
 	});
 });
 
-/*
-    Contact form
-	*/
-	$('.contact-form-face form input[type="text"], .contact-form-face form textarea').on('focus', function() {
-		
-	$('.contact-form-face form').submit(function(e) {
-		e.preventDefault();
-	    $('.contact-form-face form input[type="text"], .contact-form-face form textarea').removeClass('contact-error');
-	    var postdata = $('.contact-form-face form').serialize();
-	    $.ajax({
-	        type: 'POST',
-	        url: 'contact.php',
-	        data: postdata,
-	        dataType: 'json',
-	        success: function(json) {
-	                if(json.emailMessage == '' && json.messageMessage == '') {
-	                $('.contact-form-face form').fadeOut('fast', function() {
-	                    $('.contact-form-face').append('<p>Gracias por contactarnos!</p>');
-	                });
-	            }
-	        }
-	    });
-		});
-		});
+$("#contactForm").submit(function(event){
+    // cancels the form submission
+    event.preventDefault();
+    submitForm();
+});
+
+function submitForm(){
+    // Initiate Variables With Form Content
+    var email = $("#email").val();
+    var message = $("#message").val();
+ 
+    $.ajax({
+        type: "POST",
+        url: "contact.php",
+       
+            
+        })
+		formSuccess();
+	  } 
 	
+	
+
+function formSuccess(){
+	location.href ="http://www.google.com";
+	//$( "#msjOculto" ).removeClass( "hidden" );
+	
+	
+}
+
 

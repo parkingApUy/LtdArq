@@ -329,7 +329,7 @@ $(function() {
 			
 
 			// Set the message text.
-			$(formMessages).text(response);
+			$(formMessages).text(Mensaje enviado con exito);
 
 			// Clear the form.
 			var email = $("#email").val();

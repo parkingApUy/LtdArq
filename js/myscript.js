@@ -324,9 +324,11 @@ function submitForm(){
 	               $( "#msgOculto" ).removeClass( "hidden" );
 	            }
             
-        })
+        
 		
 	  } 
+	  })
+}
 	
 	
 

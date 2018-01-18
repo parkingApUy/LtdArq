@@ -333,11 +333,9 @@ $(function() {
 			$(formMessages).show();
 			document.getElementById("fieldsError").style.visibility = "visible"; 
 			// Clear the form.
-			var email = $("#email").val();
-    			var message = $("#message").val();
-			//$('#name').val('');
-			//$('#email').val('');
-			//$('#message').val('');
+			$('#email').val('');
+			$('#message').val('');
+			
 		})
 		
 

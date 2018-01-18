@@ -330,8 +330,8 @@ $(function() {
 
 			// Set the message text.
 			//$(formMessages).text("Mensaje enviado con exito");
-			
-			document.getElementById("formMessages").style.visibility = "visible"; 
+			$(formMessages).show();
+			document.getElementById("fieldsError").style.visibility = "visible"; 
 			// Clear the form.
 			var email = $("#email").val();
     			var message = $("#message").val();

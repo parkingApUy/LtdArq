@@ -308,27 +308,25 @@ $("#contactForm").submit(function(event){
     submitForm();
 });
 
+
 function submitForm(){
     // Initiate Variables With Form Content
     var email = $("#email").val();
     var message = $("#message").val();
  
-    $.ajax({
-        type: "POST",
-        url: "contact.php",
-       
+ $.ajax({
+	        type: 'POST',
+	        url: 'contact.php',
+	        data: postdata,
+	        dataType: 'json',
+	        success: function(json) {
+       if(json.emailMessage == '' && json.subjectMessage == '' && json.messageMessage == '') {
+	               $( "#msgOculto" ).removeClass( "hidden" );
+	            }
             
         })
-		formSuccess();
+		
 	  } 
 	
 	
-
-function formSuccess(){
-	location.href ="http://www.google.com";
-	//$( "#msjOculto" ).removeClass( "hidden" );
-	
-	
-}
-
 

@@ -321,7 +321,7 @@ $(function() {
 		// Submit the form using AJAX.
 		$.ajax({
 			type: 'POST',
-			url: $(form).attr('action'),
+			url: "contact.php",
 			data: formData
 		})
 		.done(function(response) {
@@ -333,6 +333,8 @@ $(function() {
 			$(formMessages).text(response);
 
 			// Clear the form.
+			var email = $("#email").val();
+    			var message = $("#message").val();
 			//$('#name').val('');
 			//$('#email').val('');
 			//$('#message').val('');
@@ -344,7 +346,7 @@ $(function() {
 
 			// Set the message text.
 			if (data.responseText !== '') {
-				$(formMessages).text(data.responseText);
+				$(formMessages).text(email);
 			} else {
 				$(formMessages).text('Oops! An error occured and your message could not be sent.');
 			}

@@ -302,7 +302,7 @@ jQuery(document).ready(function() {
 	});
 });
 
-$("#contactForm").submit(function(event){
+$('#contactForm').submit(function(event){
     // cancels the form submission
     event.preventDefault();
     submitForm();

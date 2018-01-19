@@ -1664,7 +1664,9 @@ input[type="color"]:focus {
 
 @media (max-width: 1024px) {
 
-	
+	.parallax, .cleancode_block, #team, .top_slider .slide1, .top_slider .slide2, .top_slider .slide3, .top_slider .slide4 {background-attachment:scroll !important; background-position:0 0;}
+	.top_slider .slide1, .top_slider .slide2, .top_slider .slide3 , .top_slider .slide4{background-size:cover !important;}
+
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -2031,6 +2033,11 @@ input[type="color"]:focus {
 	.col-ss-3 {width: 25%;}
 	.col-ss-2 {width: 16.666666666666664%;}
 	.col-ss-1 {width: 8.333333333333332%;}
+	
+	.top_slider .slide1 .flex_caption1 .title1, .top_slider .slide1 .flex_caption1 .title2, .top_slider .slide1 .flex_caption1 .title3, .top_slider .slide2 .flex_caption1 .title1, .top_slider .slide2 .flex_caption1 .title2, .top_slider .slide2 .flex_caption1 .title3, .top_slider .slide3 .flex_caption1 .title1, .top_slider .slide3 .flex_caption1 .title2, .top_slider .slide3 .flex_caption1 .title3 , .top_slider .slide4 .flex_caption1 .title1, .top_slider .slide4 .flex_caption1 .title2 {font-size:26px; line-height:26px;}
+	
+	.top_slider .slide1 .flex_caption1 .title4, .top_slider .slide2 .flex_caption1 .title4, .top_slider .slide3 .flex_caption1 .title4 {width:90px;}
+	
 
 }
 

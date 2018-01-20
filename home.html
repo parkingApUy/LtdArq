@@ -407,7 +407,7 @@
 						<div id="fields">
 							<form class="form" id="fc" action="contact.php" method="POST" >
                             
-								<input  id="email" type="text" name="email" required  value="Email" />
+								<input  id="email" type="text" name="email" required  value="Email"  pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" />
                                 
 								<textarea  id="message" name="message" required >Mensaje</textarea>
 								
@@ -425,6 +425,13 @@
 					</div><!-- //CONTACT FORM -->
 				</div>
 			</div><!-- //ROW -->
+				<script>
+				var input = document.getElementById('email');
+				input.oninvalid = function(event) {
+    event.target.setCustomValidity('Verifique su mail');
+}
+				
+				</script>
 			<div class="row copyright">
 				<div class="col-lg-12 text-center">
 				

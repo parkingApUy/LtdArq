@@ -8,8 +8,8 @@ require("sendgrid-php/sendgrid-php.php");
 
 
 $from = new SendGrid\Email(null, $clientEmail);
-$subject = "LTD+";
-$to = new SendGrid\Email(null, "info@parkingap.com.uy");
+$subject = "LTDArq";
+$to = new SendGrid\Email(null, "contacto@ltdarq.com.uy");
 $content = new SendGrid\Content("text/plain", $message);
 $mail = new SendGrid\Mail($from, $subject, $to, $content);
 

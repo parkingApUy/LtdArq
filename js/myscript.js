@@ -329,7 +329,7 @@ $(function() {
 			
 
 			// Set the message text.
-			//$(formMessages).text("Mensaje enviado con exito");
+			$(formMessages).text("Mensaje enviado con exito");
 			$(formMessages).show();
 			document.getElementById("fieldsError").style.visibility = "visible"; 
 			// Clear the form.

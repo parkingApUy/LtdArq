@@ -20,6 +20,7 @@ $sg = new \SendGrid($apiKey);
 $array = array('emailMessage' => '', 'subjectMessage' => '', 'messageMessage' => '');
 
 $response = $sg->client->mail()->send()->post($mail);
+echo json_encode($response);
 
 
 

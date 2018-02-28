@@ -17,10 +17,10 @@ $mail = new SendGrid\Mail($from, $subject, $to, $content);
 $apiKey = getenv('SENDGRID_API_KEY');
 $sg = new \SendGrid($apiKey);
 
-$array = array('emailMessage' => '', 'subjectMessage' => '', 'messageMessage' => '');
+
 
 $response = $sg->client->mail()->send()->post($mail);
-echo json_encode($response);
+
 
 
 

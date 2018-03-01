@@ -333,12 +333,12 @@ $(function() {
 			// Clear the form.
 			$('#email').val('');
 			$('#message').val('');
-			
-		})
+	})
 		
 
 	});
 
 });
+
 
 

@@ -327,9 +327,9 @@ $(function() {
 		})
 		.done(function(response) {
 			// Set the message text.
-			$(formMessages).text("Mensaje enviado con exito");
-			$(formMessages).show();
-			document.getElementById("formMessages").style.visibility = "visible"; 
+			$('#formMessages').text("Mensaje enviado con exito");
+			$('#formMessages').show();
+			document.getElementById('#formMessages').style.visibility = "visible"; 
 			// Clear the form.
 			$('#email').val('');
 			$('#message').val('');

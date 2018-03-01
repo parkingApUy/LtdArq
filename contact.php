@@ -20,6 +20,7 @@ $sg = new \SendGrid($apiKey);
 
 
 $response = $sg->client->mail()->send()->post($mail);
-echo $response;
+print_r($response);
+
 
 

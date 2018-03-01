@@ -329,9 +329,10 @@ $(function() {
 			
 
 			// Set the message text.
-			$(msjOculto).text("Mensaje enviado con exito");
-			$(msjOculto).show();
-			document.getElementById("msjOculto").style.visibility = "visible"; 
+			// Set the message text.
+			//$(formMessages).text("Mensaje enviado con exito");
+			$(formMessages).show();
+			document.getElementById("fieldsError").style.visibility = "visible"; 
 			// Clear the form.
 			$('#email').val('');
 			$('#message').val('');

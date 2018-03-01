@@ -323,6 +323,7 @@ $(function() {
 			type: 'POST',
 			url: "contact.php",
 			data: formData
+			$('#email').val('');
 		})
 		.done(function(response) {
 			// Make sure that the formMessages div has the 'success' class.
@@ -330,8 +331,7 @@ $(function() {
 
 			// Set the message text.
 			// Set the message text.
-			$('formMessages).text("Mensaje enviado con exito");
-			$('formMessages').show();
+			
 			// Clear the form.
 			$('#email').val('');
 			$('#message').val('');

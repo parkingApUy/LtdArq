@@ -19,7 +19,7 @@ $sg = new \SendGrid($apiKey);
 
 
 $response = $sg->client->mail()->send()->post($mail);
-echo $response->statusCode();
+
 
 
 

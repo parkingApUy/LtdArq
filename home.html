@@ -381,9 +381,9 @@ Damos soluciones a cada proyecto que se nos presenta teniendo en cuenta la deman
 						<div id="fields">
 							<form class="form" id="fc" action="contact.php" method="POST" >
 							
-								<input  id="email" type="text" name="email" required  value="Email"  pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" />
+								<input  id="email" type="text" name="email" onfocus="javascript: if(this.value == 'Email') this.value = '';" required  value="Email"  pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"  />
                                 
-								<textarea  id="message" name="message" required >Mensaje</textarea>
+								<textarea  id="message" name="message" onfocus="javascript: if(this.value == 'Mensaje') this.value = '';"  required >Mensaje</textarea>
 								
 								
 								<h4 hidden id="formMessages">Mensaje enviado con éxito</h4>
